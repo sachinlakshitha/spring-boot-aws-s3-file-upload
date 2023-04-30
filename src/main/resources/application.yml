@@ -1,0 +1,16 @@
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 100MB
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+aws:
+  s3:
+    bucket: <your-bucket-name>
+    region: <bucket-region>
+    accessKey: <your-access-key>
+    secretKey: <your-secret-key>
+    base:
+      url: https://<bucket-name>.s3.<bucket-region>.amazonaws.com/
